@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Die Pseudoklasse :nth-child() - Beispiele</title>
+
+  <style>
+  body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+  h1 { font-size: 1.25em; margin-bottom: 0.5em;}
+  code { font-size: 1.25em;}
+
+  nav ul { 
+    background: #ccc;
+    padding: 0; 
+    margin: 0;
+  }
+
+  nav ul li { 
+    list-style-type: none; 
+    padding: 0.5em; 
+    margin: 0;
+  }
+
+  /* Geben Sie zum Ausprobieren im Klammernpaar andere Werte ein */
+  /*nav li:nth-child(2n) { background-color: #058 ; color: white;}*/
+  /*nav li:nth-child(2n+1) { background-color: #058 ; color: white;}*/
+  /*nav li:nth-child(2n+3) { background-color: #058 ; color: white;}*/
+  /*nav li:nth-child(3n) { background-color: #058 ; color: white;}*/
+  nav li:nth-child(3n+2) { background-color: #058 ; color: white;}
+  /*nav li:nth-child(-n+4) { background-color: #058 ; color: white;}*/
+
+  </style>
+
+</head>
+<body>
+
+<h1>Die Pseudoklasse <code>:nth-child()</code></h1> 
+
+<p><code>nav li:nth-child(3n+2)</code>. Weitere Beispiele finden Sie auskommentiert im Quelltext.</p>
+
+<nav>
+  <ul>
+    <li>eins</li>
+    <li>zwei</li>
+    <li>drei</li>
+    <li>vier</li>
+    <li>fünf</li>
+    <li>sechs</li>
+    <li>sieben</li>
+    <li>acht</li>
+    <li>neun</li>
+    <li>zehn</li>
+  </ul>
+</nav>
+
+
+
+</body>
+</html>

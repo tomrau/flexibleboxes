@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>5.1 figure und figcaption</title>
+  <style>
+  body { 
+    width: 500px; 
+    font-family: Verdana, sans-serif; 
+    margin: 0 auto; 
+  }
+  figure { 
+    padding: 0; 
+    margin: 0 1em 1em 0; 
+  }
+  figcaption { 
+    font-size: 0.8em; 
+    text-align: center;
+  }
+  img { 
+    padding: 0.25em; 
+    border-radius: 0.5em;
+    max-width: 100%; 
+    height: auto;
+  }
+  figure.zwei-bilder img {
+    float: left;
+    width: 47%;
+    margin-right: 0.25em;
+  }
+  figure.zwei-bilder figcaption {
+    clear: both;
+  }
+  </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+
+<body>
+<h1>5.1 figure und figcaption</h1>
+<p>Abbildungen mit Beschriftung</p>
+
+<h2>5.1.1 Ein Bild mit Beschriftung</h2>
+<figure class="ein-bild">  
+<img src="noorderhaven01.jpg" alt="Noorderhaven">
+<figcaption>Der Noorderhaven in Groningen</figcaption>
+</figure>
+
+
+<h2>5.1.2 Mehrere Bilder mit Beschriftung</h2>
+
+<figure class="zwei-bilder">  
+<img src="noorderhaven01.jpg" alt="Noorderhaven">
+<img src="noorderhaven02.jpg" alt="Nochmal Norderhaven">
+<figcaption>Der Noorderhaven in Groningen</figcaption>
+</figure>
+
+
+</body>
+</html>

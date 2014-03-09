@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	
+	<title>Flexible Boxes - Genericons</title>
+	
+	<meta name="description" content="Die Beispielseiten für das Buch Flexible Boxes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="genericons.css" rel="stylesheet">
+
+	<style>
+	body { width: 80%; margin: 0 auto; line-height: 1.7; font-family: sans-serif; margin-top: 2em;}
+
+	ul.iconlist {
+		padding: 0; 
+		margin: 0 0 5em 0; 
+	}
+	.iconlist li {
+		text-indent: -16px;	/* Platz für das Icon */ 
+		list-style-type: none;
+		line-height: 1.2; 
+		margin-bottom: 0.5em;
+	}
+	.iconlist li:before {
+	  /*content: '\f418';*/
+	  content: "\2714\00A0"; 
+	  /*font-family: "Genericons";*/ 
+	  font-size: 16px;
+	  font-size: 1rem;
+	  font-weight: normal;
+	  line-height: 1;
+	  /*vertical-align: middle;*/
+		
+		/*padding-right: 8px;*/
+	  -webkit-font-smoothing: antialiased;
+	}
+
+/* Social Media Genericons */ 
+
+div.socialmedia a.genericon-twitter { font-size: 16px; vertical-align: middle;}
+
+ul.socialmedia { padding: 0; margin: 0; }
+.socialmedia li { display: inline-block; margin-right: 2em; }
+.socialmedia a.genericon { font-size: 32px; }
+.socialmedia a.genericon-twitter { color: #00acee; }
+.socialmedia a.genericon-facebook-alt { color: #3b5998; }
+.socialmedia a.genericon-googleplus { color: #db4a39; }
+
+.big .socialmedia a.genericon { font-size: 160px; }
+.big .socialmedia li {margin-right: 10em; }
+
+
+
+	</style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body> 
+<h1>Iconfonts mit Genericons</h1>
+
+
+<div class="socialmedia" style="margin-top:5em">
+Let's tweet again <a class="genericon genericon-twitter"></a>
+</div>
+
+
+<div style="margin-top:5em">	
+	<ul class="socialmedia">
+		<li><a href="#" class="genericon genericon-twitter"></a></li>
+		<li><a href="#" class="genericon genericon-facebook-alt"></a></li> 
+		<li><a href="#" class="genericon genericon-googleplus"></a></li>
+	</ul>
+</div>
+
+<div class="big" style="margin-top:5em">	
+	<ul class="socialmedia">
+		<li><a href="#" class="genericon genericon-twitter"></a></li>
+		<li><a href="#" class="genericon genericon-facebook-alt"></a></li> 
+		<li><a href="#" class="genericon genericon-googleplus"></a></li>
+	</ul>
+</div>
+
+
+<div style="margin-top:15em">	
+	<ul class="iconlist">
+	  <li>Icon-Fonts sind skalierbar </li>
+  	<li>Icon-Fonts sind einfach einzubinden</li>
+  	<li>Icon-Fonts werden immer mehr </li>
+	</ul>
+</div>
+
+</body>
+</html>

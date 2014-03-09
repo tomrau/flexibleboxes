@@ -1,0 +1,55 @@
+/* K14 Stylesheet für Prozentgrid */
+
+@media screen and (min-width:768px) {
+  
+  /* Reset padding von layout.css, Zeile 33 */ 
+  header[role="banner"], 
+  nav[role="navigation"], 
+  div[class="wrap"], 
+  footer[role="contentinfo"] {
+    padding-left: 0;
+    padding-right: 0;
+  } 
+
+  *[class*="grid"] {
+    float:left;
+    margin-right:1.041666666667%; /* 10px/960px mal 100 */ 
+    margin-left:1.041666666667%;
+  }
+
+  header[role="banner"] .hgroup,
+  nav[role="navigation"] > ul#navlist,
+  footer[role="contentinfo"] .footercontent {
+    margin-right: 1.041666666667%;
+    margin-left: 1.041666666667%; 
+  }
+
+  /* Layoutbreite bei FULLPAGE nicht mehr durch body */ 
+  header > .inside,
+  nav#nav,
+  div.wrap,
+  footer > .inside {
+    max-width: 960px; /* 960 statt 980 - kein padding mehr */ 
+    width: 90%;       /* 90% durch Versuch und Irrtum ermittelt */ 
+    margin: 0 auto;   /* oben kein Abstand und zentriert */
+  }
+
+
+  /* Formel: %-Wert = px-Wert / 960 * 100 */ 
+  .grid1  { width:6.25%;  }
+  .grid2  { width:14.583333333333%; }
+  .grid3  { width:22.916666666667%; }
+  .grid4  { width:31.25%; }
+  .grid5  { width:39.583333333333%; }
+  .grid6  { width:47.916666666667%; }
+  .grid7  { width:56.25%; }
+  .grid8  { width:64.583333333333%; }
+  .grid9  { width:72.916666666667%; }
+  .grid10 { width:81.25%; }
+  .grid11 { width:89.583333333333%; }
+  .grid12 { width:97.916666666667%; }
+
+
+} /* Ende @media 
+
+/* eof */ 

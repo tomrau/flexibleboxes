@@ -1,0 +1,52 @@
+/* K14 Stylesheet für flexibles Grid */
+
+@media screen and (min-width:768px) {
+  
+  /* Reset padding aus layout.css, Kapitel 08, Zeile 48 */ 
+  header[role="banner"], 
+  nav[role="navigation"], 
+  div[class="wrap"], 
+  footer[role="contentinfo"] {
+    padding-left: 10px;
+    padding-right: 10px; 
+  }
+
+  .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, 
+  .grid7, .grid8, .grid9, .grid10, .grid11, .grid12 { 
+    float:left;
+    margin-right: 1.041666666667%; 
+    margin-left:  1.041666666667%; 
+  }
+ 
+  header[role="banner"] .inside ,
+  nav[role="navigation"], 
+  footer[role="contentinfo"] .inside {
+    margin-right: 1.041666666667%; 
+    margin-left:  1.041666666667%; 
+  } 
+
+   body {
+    width: 90%;
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  /* Formel: %-Wert = px-Wert / 960 * 100 */ 
+  .grid1  { width:6.25%;  }            /*  60px */ 
+  .grid2  { width:14.583333333333%; }  /* 140px */
+  .grid3  { width:22.916666666667%; }  /* 220px */
+  .grid4  { width:31.25%; }            /* 300px */
+  .grid5  { width:39.583333333333%; }  /* 380px */
+  .grid6  { width:47.916666666667%; }  /* 460px */
+  .grid7  { width:56.25%; }            /* 540px */
+  .grid8  { width:64.583333333333%; }  /* 620px */
+  .grid9  { width:72.916666666667%; }  /* 700px */
+  .grid10 { width:81.25%; }            /* 780px */
+  .grid11 { width:89.583333333333%; }  /* 860px */
+  .grid12 { width:97.916666666667%; }  /* 940px */
+
+
+} /* Ende @media 
+
+/* eof */ 

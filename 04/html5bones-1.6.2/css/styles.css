@@ -1,0 +1,105 @@
+/* ---------------------------------------------------------
+   HTML5 Bones
+   This stylesheet contains print styling and a section for 
+   you to simply add your own. This is a basic template 
+   after all.
+   ---------------------------------------------------------*/
+	body {
+   
+	}
+	/* Default link styling */
+	a:link { color:#0271fb; }
+	a:visited { color:#bd02fb; }
+	a:hover, a:focus { color:#000; }
+	a:active { color:#fb0e02; }
+	
+	
+	
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+  html { background: #f2f2f2; }
+  body {
+    background: white;
+    width: 90%;
+    max-width: 960px;
+    min-width: 650px;
+    padding: 1em;
+    margin: 1em auto;
+  }
+  body > header {
+    padding-bottom: 1em;
+    border-bottom: 3px double #ccc;
+    margin-bottom: 2em;
+  }
+  body > header h1 { margin: 0; }
+  body > header p { margin: 0; }
+  abbr[title] { text-decoration: none; border-bottom: none; } 
+  abbr[title]:hover { border-bottom: 1px dotted #08c; }
+  div.wrap {
+    display: table; /* Floats umschließen */
+    margin-bottom: 1em;
+  }
+  
+  /* Breite < 80%. "border-box" kommt erst später */
+  main[role="main"] {
+    float: left;
+    width: 75%; 
+  }
+  main h2 { margin-top: 0; }
+  /* Ausblenden, da auf Desktop-Bildschirmen ueberfluessig */ 
+  main nav {
+    position: absolute;
+    top: -32768px;
+    left: -32768px;
+  }
+  aside[role="complementary"] {
+    float: right;
+    width: 20%;
+    background: #eee;
+    border-radius: 0.5em;
+    padding: 0.5em;
+  }
+  body > footer {
+    clear: both;
+    color: #aaa;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+  }
+
+	
+/* ---------------------------------------------------------
+   Print styles
+   ---------------------------------------------------------*/
+@media print {
+    * {
+        color:#000 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+		background:transparent !important;
+    }
+	html { background-color:#fff; }
+	/* Hide navigation */
+	nav { display:none; }
+
+	/* Show link destinations in brackets after the link text */
+	a[href]:after { content: " (" attr(href) ") "; }
+	a[href] {
+		font-weight:bold;
+		text-decoration:underline;
+		color:#06c;
+		border:none;
+	}
+	/* Don't show link destinations for JavaScript or internal links */ 
+	a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
+	
+	/* Show abbr title value in brackets after the text */
+	abbr[title]:after { content: " (" attr(title) ")"; }
+
+	figure { 
+		margin-bottom:1em; 
+		overflow:hidden;
+	}
+
+	figure img { border:1px solid #000; }
+}

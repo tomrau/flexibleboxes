@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de"> 
+<head>
+	<meta charset="utf-8">
+	
+	<title>Video einbinden mit &lt;video&gt;</title>
+	
+	<meta name="description" content="Diese Seite zeigt, wie man eine Audio-Datei direkt im Browser abspielen kann.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet" media="all">
+
+	<style>
+	body { 
+    width: 80%; 
+    font-family: Verdana, sans-serif; 
+    font-size: 0.875em;
+    margin: 0 auto; 
+  }
+  
+  h1 { font-size: 125%; }
+
+  video { border: 3px double #ccc; border-radius: 0.25em; background-color: #eee; }
+	
+	video a {display: block; margin-top: 1em;}
+
+	p.info { padding: 0.5em; background-color: #eee; border: 1px solid #ccc; border-radius: 4px; }
+
+	</style>
+	
+	<!-- Include the HTML5 shiv and shiv print polyfills for Internet Explorer browsers 8 and below -->
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+<h1>Video direkt im Browser abspielen mit &lt;video&gt;</h1>
+<p>Diese Seite zeigt, wie man mit dem Element <code>video</code> ein Video direkt im Browser abspielen kann. </p>
+
+	<!-- This video element tells the browser to display the default control set, to use a specified poster image which will display before the user plays the video, and to only preload the video's metadata (e.g. video duration)
+	NOTE: Internet Explorer 9 and 10 will ignore the poster image if any of the video is loaded. To force these browsers to support the poster image, set preload="none" -->	
+	<video id="video" controls poster="lb-tw.jpg" preload="none">
+		
+		<!-- Provide multiple video sources for cross-browser support -->
+		<!-- MP4 source for Chrome, Safari, Internet Explorer 9+, iOS and Android
+		NOTE: remove the type attribute from the MP4 <source> element to ensure older Android support -->
+		<source src="lb-360p.mp4" type="video/mp4">
+		
+		<!-- WebM source for FireFox and Opera (also Chrome and Internet Explorer 9+) -->
+		<source src="lb-360p.webm" type="video/webm">
+		
+		<!-- Include an Ogg video file to support Firefox 3.5 and 3.6 -->
+		<!-- <source src="lb-360p.ogg" type="video/ogg"> -->
+		
+		<!-- Provide a Flash fallback for browsers that don't support HTML5 video, e.g. Internet Explorer 6-7.
+		This uses the Video.js Flash Player to play the MP4 file. Set the height and width attributes to the correct values. -->
+		<object type="application/x-shockwave-flash" data="player.swf" width="480" height="270">
+        	<param name="movie" value="player.swf" />
+        	<param name="flashvars" value="controlbar=over&amp;image=lb-tw.jpg&amp;file=lb-360p.mp4" />
+    	</object>
+	
+		<!-- Add a downloadable link for users who do not have a HTML5 video capable browser, nor Flash installed
+		NOTE: This link will be displayed even if the user has Flash installed -->
+		<p>Falls Ihr Browser Videos nicht direkt abspielen kann: <a href="lb-360p.mp4">Download MP4 video</a></p>
+	</video>
+
+	<ul>
+		<li>Aufgenommen in der <a href="http://technikwuerze.de/podcast/technikwuerze-173-contao-total/" target="_blank">Technikwürze #173</a></li>
+		<li><a href="https://www.youtube.com/watch?v=hyOJeS4KvAc" target="_blank">Little Boxes Webstandards Mix bei YouTube</a></li>
+	</ul>
+
+	<!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+	<!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+	<footer role="contentinfo">
+	
+		<!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2012' is a date -->
+		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+		
+	</footer>
+	
+	<!-- Required to initiate video play in Android -->
+	<script>
+		// Use browser sniffing to check if it's a pre Android 4 device (some say browser sniffing is bad - but I think it's appropriate here)
+		var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
+		
+		// If this is a pre Android 4 device, then add a click handler to play the audio and video when it is "clicked" (touched)
+		if (isAndroid) {
+			var video = document.getElementById("video");
+			video.addEventListener("touchstart", function() { video.play(); }, false);
+		}
+	</script>
+	
+	<!-- Google Analytics - Optimized version by Mathias Bynens -->
+	<!-- See: http://mathiasbynens.be/notes/async-analytics-snippet -->
+	<!-- Change the UA-XXXX-XX string to your site's ID -->
+	<script>
+		var _gaq=[['_setAccount','UA-XXXX-XX'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+	</script>
+	
+</body>
+</html>

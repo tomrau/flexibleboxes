@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Transform 3</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body { width: 80%; padding: 0 1em; margin: 0 auto; background: #333; color: white; line-height: 1.7; font-family: sans-serif;}
+    code { font-style: Courier, mono; font-size: 1rem; padding: 0.25em; }
+    h1 { font-size: 1.25rem; }
+    
+    img { max-width: 100%; border: 0.25rem solid white;}    
+
+    figure { 
+      float: left;
+      margin: 1rem;
+      width: 20rem;
+    }
+    figure:first-of-type { margin-left: 0; } 
+    figure:last-of-type { margin-right: 0; } 
+  
+    figure#eins {
+      -webkit-transform: rotate(-15deg);
+         -moz-transform: rotate(-15deg);
+           -o-transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
+              transform: rotate(-15deg);   
+    }
+    figure#zwei {
+      -webkit-transform: rotate(15deg) translate(-100px,20px);
+         -moz-transform: rotate(15deg) translate(-100px,20px);
+           -o-transform: rotate(15deg) translate(-100px,20px);
+          -ms-transform: rotate(15deg) translate(-100px,20px);
+              transform: rotate(15deg) translate(-100px,20px); 
+     }
+    figure#drei{
+      -webkit-transform: rotate(-15deg) translate(-250px,-80px);
+         -moz-transform: rotate(-15deg) translate(-250px,-80px);
+           -o-transform: rotate(-15deg) translate(-250px,-80px);
+          -ms-transform: rotate(-15deg) translate(-250px,-80px);
+              transform: rotate(-15deg) translate(-250px,-80px); 
+    }
+
+    </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+<h1>Transform 3</h1>
+
+  <figure id="eins">
+    <img src="noorderhaven.jpg">
+  </figure>
+  
+  <figure id="zwei">
+    <img src="noorderplantsoen.jpg">
+  </figure>
+  
+  <figure id="drei">
+    <img src="oranjebuurt.jpg">
+  </figure>
+
+
+</body>
+</html>

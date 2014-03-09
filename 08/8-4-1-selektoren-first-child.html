@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Die Pseudoklasse :first-child</title>
+
+  <style>
+  body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+  h1 { font-size: 1.25em; margin-bottom: 0.5em;}
+
+nav ul { padding: 0; margin: 0;}
+
+nav ul li { 
+  float: left; 
+  border-right: 1px solid #ccc; 
+  list-style-type: none; 
+  padding: 0 0.5em; 
+}
+nav li:first-child { border-left: 1px solid #ccc; }
+
+  </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+<h1>Die Pseudoklasse <code>:first-child</code></h1> 
+<p>Der senkrechte Strich vor dem Menüpunkt "Startseite" wird mit der Pseudoklasse <code>:first-child</code> erreicht.</p>
+<nav>
+  <ul>
+    <li><a href="#">Startseite</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Reisen</a></li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+</nav>
+
+
+
+</body>
+</html>

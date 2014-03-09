@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Runde Ecken per CSS3: <code>border-radius</code> </title>
+
+  <style>
+    body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+    h1 { font-size: 1.25em; text-align: center; margin-bottom: 0.5em;}
+    code { font-style: Courier, mono; font-size: 1rem; padding: 0.25em; }
+
+    div#eins  { 
+      background: #A8CAF3; 
+      width: 25em; 
+      padding: 0.5em; 
+      border: 0.25em solid #175ba2; 
+      border-radius: 0.5em; 
+    } 
+
+    div#zwei  { 
+      background: #A8CAF3; 
+      width: 25em; 
+      padding: 0.5em; 
+      border-radius: 0.5em; 
+    }    
+
+
+    div#drei  { 
+      background: #A8CAF3; 
+      width: 25em; 
+      padding: 0.5em; 
+      border-radius: 0.25em 3em 0.25em 3em; 
+    }    
+  </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+<h1>Runde Ecken per CSS3: <code>border-radius</code></h1>
+
+<h2>Beispiel Nr. 1</h2>
+<div id="eins">
+<p>Diese Box hat gleichmäßig abgerundete Ecken.</p> 
+<pre>
+div { 
+  background: #a8caf3; 
+  width: 25em; 
+  padding: 0.5em; 
+  border: 0.25em solid #175ba2; 
+  <strong>border-radius: 0.5em;</strong> 
+} 
+</pre>
+</div>
+
+<h2>Beispiel Nr. 2</h2>
+<div id="zwei">
+<p>Diese Box hat gleichmäßig abgerundete Ecken.</p> 
+<pre>
+div { 
+  background: #a8caf3; 
+  width: 25em; 
+  padding: 0.5em; 
+  <strong>border-radius: 0.5em;</strong> 
+} 
+</pre>
+</div>
+
+<h2>Beispiel Nr. 3</h2>
+<div id="drei">
+<p>Diese Box hat verschiedene abgerundete Ecken.</p> 
+<pre>
+div { 
+  background: #a8caf3; 
+  width: 25em; 
+  padding: 0.5em; 
+  <strong>border-radius: 0.25em 3em 0.25em 3em;</strong> 
+} 
+
+</pre>
+</div>
+
+
+</body>
+</html>

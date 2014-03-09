@@ -1,0 +1,26 @@
+/* ---------------------------------------------------------
+   Inhalte in main, aside und Co
+   ---------------------------------------------------------*/
+
+/* -------------
+   Kapitel 06  */ 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* -------------
+   Kapitel 07  */ 
+
+main header h2 {
+  line-height: 1; 
+  padding: 0;
+  margin: 0; 
+}
+.startseite main header h2 { 
+  margin-bottom: 1em;
+}
+
+/* eof */

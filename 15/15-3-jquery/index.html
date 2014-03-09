@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">  
+  
+  <title>Flexible Boxes - Startseite</title>
+  
+  <meta name="description" content="Die Beispielseiten für das Buch Flexible Boxes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/styles.css" rel="stylesheet" media="all">  
+  
+  <link rel="stylesheet" href="css/flexslider.css">
+ 
+  <script src="js/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script>
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv-printshiv.js" media="all"></script>
+  <![endif]-->
+</head>
+  
+<body class="startseite" id="menu">
+<!-- pageheader --> 
+<header role="banner" id="nomenu">
+<div class="inside">  
+  <div class="hgroup">  
+    <h1 lang="en">Flexible Boxes</h1>
+    <p class="slogan">Einführung ins responsive Webdesign</p>
+  </div>
+</div>
+</header>
+
+<!-- main navigation, ID maybe useful as fragment identifier --> 
+<nav role="navigation" id="nav">
+  <!-- heading useful in outline algorithm, but hidden in visual layouts --> 
+  <h2 class="hideme">Navigation</h2>
+  
+  <ul id="navlist">
+    <li class="active"><a href="index.html">Startseite</a></li>
+    <li><a href="news.html"><span lang="en">News</span></a></li>
+    <li><a href="video.html">Video</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+
+  <div class="menubutton">
+    <a href="#menu" class="shownavlist">Menü</a>
+    <a href="#nomenu" class="hidenavlist">Menü</a>
+  </div>
+
+</nav>
+
+<!-- <div> maybe useful as hook for CSS, especially, if <main> is followed by an <aside> --> 
+<div class="wrap"> 
+  <!-- <main> is useful for ARIA, but not sectioning --> 
+  <main role="main"> 
+    <!-- <section> begins new section for outline algorithm, ID maybe useful as fragment identifier --> 
+    <section id="content">
+        <!-- header for this section, without <section> it would technically be a pageheader -->
+      <header class="cf">
+        <h2 class="grid12">Startseite</h2> 
+      
+        <div class="headertext grid8">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis ligula tortor. Duis dictum, dolor eget dignissim scelerisque, augue lorem dictum nisl, quis molestie purus lectus vel ligula. Curabitur eget nisl mauris. Donec pharetra tellus sollicitudin lacus volutpat lacinia. </p>
+        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+        
+        </div>
+
+        <!-- <img class="grid4" src="bilder/newyorkbridges_mini.jpg" alt="Brücken in New York - Brooklyn und Manhattan"> -->
+        <div class="flexslider headerbild grid4">
+          <ul class="slides">
+            <li><img src="bilder/newyorkbridges_mini.jpg" alt="Brücken in New York - Brooklyn und Manhattan"></li>
+            <li><img src="bilder/brooklynbridge_mini.jpg" alt="Die Brooklyn Bridge in New York"></li>
+            <li><img src="bilder/prospectstreet_mini.jpg" alt="Manhattan Bridge, von Brooklyn aus."></li>
+          </ul>
+        </div>
+      </header>
+    
+      <article id="a1" class="grid6 clear"> 
+      <h3 lang="en">Responsive</h3>
+      <p>Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte!</p>
+      </article>
+
+      <article id="a2" class="grid6">
+      <h3 lang="en">Web</h3>
+      <p>Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern? Oder gehörten die Schritte hinter ihm zu einem der unzähligen Gesetzeshüter dieser Stadt, und die stählerne Acht um seine Handgelenke würde gleich zuschnappen?</p>
+      </article>
+
+      <article id="a3" class="grid6">  
+      <h3 lang="en">Design</h3>
+      <p>Er konnte die Aufforderung stehen zu bleiben schon hören. Gehetzt sah er sich um. Plötzlich erblickte er den schmalen Durchgang. Blitzartig drehte er sich nach rechts und verschwand zwischen den beiden Gebäuden. Beinahe wäre er dabei über den umgestürzten Mülleimer gefallen, der mitten im Weg lag. </p>
+      </article>
+    
+      <article id="a4" class="grid6">
+      <h3>Der Ausweg</h3>
+      <p>Er versuchte, sich in der Dunkelheit seinen Weg zu ertasten und erstarrte: Anscheinend gab es keinen anderen Ausweg aus diesem kleinen Hof als den Durchgang, durch den er gekommen war. Die Schritte wurden lauter und lauter, er sah eine dunkle Gestalt um die Ecke biegen. Fieberhaft irrten seine Augen durch die nächtliche Dunkelheit und suchten einen Ausweg. Und dann sah er ihn: <span lang="en">Responsive Web Design</span>.</p>
+      </article>
+    
+    </section>
+  </main>    
+</div> <!-- Ende .wrap -->
+  
+<footer role="contentinfo" class="clear">
+<div class="inside">
+  <div class="footercontent">  
+    <small>&copy; <time datetime="2013">2013</time> Ihr Name | <a href="#">Impressum</a></small>
+    
+    <address>
+    <p>Name | Straße | PLZ Ort | Land </p>
+    </address>
+
+    <ul class="socialmedia">
+      <li><a href="#" class="genericon genericon-twitter"></a></li> 
+      <li><a href="#" class="genericon genericon-facebook-alt"></a></li>
+      <li><a href="#" class="genericon genericon-googleplus"></a></li>
+    </ul>
+  </div>
+</div>  
+</footer>
+ 
+</body>
+</html>

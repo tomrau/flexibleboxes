@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Box-Modell: Die Content-Box</title>
+
+  <style>
+    body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+    h1 { font-size: 1.25em; text-align: center; margin-bottom: 0.5em;}
+    code { font-style: Courier, mono; font-size: 1rem; padding: 0.25em; }
+
+    .einfach {
+      width: 500px;
+      background: #eee;
+      margin: 0 auto;
+    }
+
+    .mitallem {
+      width: 500px;
+      background: #eee;
+      padding: 20px;
+      border: 10px solid #8eb0d9;
+      margin: 0 auto;
+    }
+  </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+
+<div class="einfach">
+<p>Diese Box hat eine Breite von 500px.</p> 
+<pre>
+.einfach {
+  width: 500px;
+}
+</pre>
+</div>
+
+<div class="mitallem">
+<p>Diese Box hat eine Breite von 500px plus <code>padding</code> und <code>border</code>.</p> 
+<pre>
+.mitallem {
+  width: 500px;
+  padding: 20px;
+  border: 10px solid #8eb0d9;
+}
+</pre>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------
+   Basisgestaltung und Layoutbereiche
+   ---------------------------------------------------------*/
+
+/* -------------
+   Kapitel 7  */ 
+
+/* Breite der Seite begrenzen (bis Media Queries kommen) */ 
+body { 
+  background: white;
+  color: #333;
+  max-width: 480px; 
+  margin: 0 auto; 
+}
+
+/* Kopf- und Fußbereich einfärben */ 
+header[role="banner"], 
+footer[role="contentinfo"] {
+  background: #333;
+  color: white; 
+}
+
+/* Elemente verstecken in visuellen Layouts */  
+.hideme {
+  position: absolute;
+  top: -32768px;
+  left: -32768px;
+}
+
+/* Info: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.cf:before, .cf:after { content: " "; display: table; } 
+.cf:after, .clear { clear: both; } 
+
+
+/* -------------
+   Kapitel 8  */ 
+
+/* Padding für Layoutbereiche */ 
+header[role="banner"] , 
+nav[role="navigation"], 
+div[class="wrap"],  
+footer[role="contentinfo"] {
+  padding: 1em;
+}
+
+/* Pageheader und -footer */
+header[role="banner"] h1 {
+  color: white; 
+  line-height: 1; 
+  padding: 0;
+  margin: 0 0 0.25em 0;
+}
+header[role="banner"] a {
+  color: white;
+  text-decoration: none; 
+}
+header[role="banner"] p {
+  padding: 0;
+  margin: 0;
+}
+footer[role="contentinfo"] a {
+  color: white;
+  text-decoration: none;  
+}
+
+
+/* eof */
+

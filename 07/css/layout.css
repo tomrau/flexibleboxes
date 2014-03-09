@@ -1,0 +1,34 @@
+/* ---------------------------------------------------------
+   Basisgestaltung und Layoutbereiche
+   ---------------------------------------------------------*/
+
+/* Breite der Seite begrenzen (bis Media Queries kommen) */ 
+body { 
+  background: white;
+  color: #333;
+  max-width: 480px; 
+  margin: 0 auto; 
+}
+
+/* Kopf- und Fußbereich einfärben */ 
+header[role="banner"], 
+footer[role="contentinfo"] {
+  background: #333;
+  color: white; 
+}
+
+/* Elemente verstecken in visuellen Layouts */  
+.hideme {
+  position: absolute;
+  top: -32768px;
+  left: -32768px;
+}
+
+/* Info: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.cf:before, .cf:after { content: " "; display: table; } 
+.cf:after, .clear { clear: both; } 
+
+
+
+/* eof */
+

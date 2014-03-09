@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	
+	<title>Flexible Boxes - text-shadow</title>
+	
+	<meta name="description" content="Die Beispielseiten für das Buch Flexible Boxes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		body { width: 90%; margin: 0 auto; line-height: 1; font-family: Arial, sans-serif; margin-top: 2em;}
+		
+		p { font-size: 3em; font-weight: bold; }
+
+		code { text-shadow: none; font-size: 2rem; font-weight: normal; color: black; }
+
+		/* Beispiele mit einem Schatten */ 
+		#none {text-shadow: none; }
+
+		#eins { text-shadow: 0px 2px -3px #999; }
+
+		#zwei {text-shadow: 1px 5px 6px #333; }
+		
+		#drei {text-shadow: -5px -5px 12px #999; }
+
+		/* Zwei Schatten */ 
+		#vier {text-shadow: 1px 1px 0px #FFF, 2px 2px 0px #999; }
+
+		/* Inset/Letterpress */ 
+		#fuenf {
+			background: #ddd;
+			color: #ccc;
+			padding: 1em;
+			text-shadow: 0 -1px 1px #666, 0 1px 1px #fff;
+		}
+		/* Emboss */ 
+		#sechs {
+			background: #ccc;
+			color: #ddd;
+			padding: 1em;
+			text-shadow: 0 -1px 1px #fff, 0 1px 1px #666;
+		}
+
+		/* Glühen */ 
+		table { background: #333; color: white; padding: 2em;}
+		td {vertical-align: top; color: white; }
+		td code { color: white; }
+		#sieben { 
+			font-size: 3em; 
+			padding-right: 2em; 
+			text-shadow: 
+			0 0 1em #fff, 
+			0 0 5em #fff,
+			0 0 10em #fff; 
+		}
+
+
+	</style>
+
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body> 
+
+
+
+<p id="none">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: none;</code> </p>
+
+<p id="eins">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: 0px 2px 3px #333;</code> </p>
+
+<p id="zwei">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: 1px 5px 6px #333;</code> </p>
+
+<p id="drei">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: -5px -5px 12px #999;</code> </p>
+
+<p id="vier">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: 1px 1px 0px #FFF, 2px 2px 0px #999;</code> </p>
+
+<p id="fuenf" style="margin-bottom:0">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: 0 -1px 1px #666, 0 1px 1px #fff;</code> </p>
+
+<p id="sechs" style="margin-top:0">Flexible Boxes <code>&nbsp;&nbsp;text-shadow: 0 -1px 1px #fff, 0 1px 1px #666;</code> </p>
+
+<table>
+	<tr>
+		<td id="sieben">Flexible Boxes</td>
+		<td>
+			<code>text-shadow:</code>
+		</td>
+		<td>
+			<code>
+				0 0 1em #fff, <br>
+				0 0 5em #fff, <br>
+				0 0 10em #fff;
+      </code>
+		</td>
+	</tr>
+</table>
+ 
+</body>
+</html>

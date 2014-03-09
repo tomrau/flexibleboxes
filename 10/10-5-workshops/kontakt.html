@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">  
+  
+  <title>Flexible Boxes - Kontakt</title>
+  
+  <meta name="description" content="Die Beispielseiten für das Buch Flexible Boxes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/styles.css" rel="stylesheet" media="all">  
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv-printshiv.js" media="all"></script>
+  <![endif]-->
+</head>
+
+<body class="kontakt">
+
+<header role="banner">
+  <div class="hgroup">  
+    <h1 lang="en"><a href="index.html" title="Zur Startseite">Flexible Boxes</a></h1>
+    <p class="slogan">Einführung ins responsive Webdesign</p>
+  </div>
+</header>
+
+<nav role="navigation" id="nav">
+  <h2 class="hideme">Navigation</h2>
+  
+  <ul id="navlist">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="news.html"><span lang="en">News</span></a></li>
+    <li class="active"><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+
+</nav>
+
+<div class="wrap">
+  <main role="main">
+    <section id="content">
+      <header>
+        <h2>Kontakt</h2>
+        <p class="subtitle">Was können wir für Sie tun?</p>
+      </header>
+
+      <p>Bitte füllen Sie alle Formularfelder aus.</p>
+      <form id="kontakt" action="#">
+      <div>  
+        <label for="besuchername">Ihr Name:</label>
+        <input type="text" id="besuchername" name="besuchername" autofocus required>
+      </div>
+      <div>
+        <label for="besuchermail">Ihre E-Mail-Adresse</label>
+        <input type="email" id="besuchermail" name="besuchermail" required>
+      </div>
+      <div>
+        <label>Ihre Nachricht</label>
+        <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+      </div>
+      <div>
+        <!-- mit ontouchstart="" stellen iOS Geräte :active dar --> 
+        <input type="submit" value="Abschicken" ontouchstart="">
+      </div>
+      </form>  
+      
+    </section>
+  </main>    
+</div> <!-- Ende .wrap -->
+  
+<footer role="contentinfo">
+    <small>&copy; <time datetime="2013">2013</time> Ihr Name | <a href="#">Impressum</a></small>
+    
+    <address>
+    <p>Name | Straße | PLZ Ort | Land </p>
+    </address>
+
+    <ul class="socialmedia">
+      <li><a href="#" class="genericon genericon-twitter"></a></li> 
+      <li><a href="#" class="genericon genericon-facebook-alt"></a></li>
+      <li><a href="#" class="genericon genericon-googleplus"></a></li>
+    </ul>
+</footer>
+ 
+</body>
+</html>

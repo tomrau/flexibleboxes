@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">  
+  
+  <title>Flexible Boxes - Video einbinden</title>
+  
+  <meta name="description" content="Die Beispielseiten für das Buch Flexible Boxes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/styles.css" rel="stylesheet" media="all">  
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <script src="js/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Target your .container, .wrapper, .post, etc.
+      $(".videobox").fitVids();
+    });
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv-printshiv.js" media="all"></script>
+  <![endif]-->
+</head>
+  
+<body class="startseite" id="menu">
+<!-- pageheader --> 
+<header role="banner" id="nomenu">
+<div class="inside">  
+  <div class="hgroup">  
+    <h1 lang="en">Flexible Boxes</h1>
+    <p class="slogan">Einführung ins responsive Webdesign</p>
+  </div>
+</div>
+</header>
+
+<!-- main navigation, ID maybe useful as fragment identifier --> 
+<nav role="navigation" id="nav">
+  <!-- heading useful in outline algorithm, but hidden in visual layouts --> 
+  <h2 class="hideme">Navigation</h2>
+  
+  <ul id="navlist">
+    <li class="active"><a href="index.html">Startseite</a></li>
+    <li><a href="news.html"><span lang="en">News</span></a></li>
+    <li><a href="video.html">Video</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+
+  <div class="menubutton">
+    <a href="#menu" class="shownavlist">Menü</a>
+    <a href="#nomenu" class="hidenavlist">Menü</a>
+  </div>
+
+</nav>
+
+<div class="wrap"> 
+  <main role="main"> 
+    <header class="grid12">
+      <h2>Videos einbinden</h2> 
+    </header>
+    <section id="content">
+    <article>
+    <div  class="grid12">
+    <p>Solange Videos mit dem Element <code>video</code> eingebunden werden, passen Sie sich flexibel an, aber
+      der Einbettungscode von YouTube, Vimeo und Co enthält meist ein <code>iframe</code>, und das geht nicht so einfach.</p> 
+
+    <p>Das folgende Video ist von Vimeo und <del>hat eine feste Größe (500x333 Pixel)</del> ist flexibel:</p>
+
+    </div>
+
+    <div class="grid9 videobox">
+    <iframe src="http://player.vimeo.com/video/2539741" width="500" height="333" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+    <p><a href="http://vimeo.com/2539741">Stand By Me | Playing For Change | Song Around The World</a> from <a href="http://vimeo.com/concordrecords">Concord Music Group</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+    </div>
+    
+    </article>
+  
+    </section>
+  </main>    
+</div> <!-- Ende .wrap -->
+  
+<footer role="contentinfo" class="clear">
+<div class="inside">
+  <div class="footercontent">
+    <small>&copy; <time datetime="2013">2013</time> Ihr Name | <a href="#">Impressum</a></small>
+    
+    <address>
+    <p>Name | Straße | PLZ Ort | Land </p>
+    </address>
+
+    <ul class="socialmedia">
+      <li><a href="#" class="genericon genericon-twitter"></a></li> 
+      <li><a href="#" class="genericon genericon-facebook-alt"></a></li>
+      <li><a href="#" class="genericon genericon-googleplus"></a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Lineare Farbverläufe</title>
+
+  <style>
+    body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+    code { font-style: Courier, mono; font-size: 1rem; padding: 0.25em; }
+    
+    div { color: white; }
+
+    div#eins  { 
+     background: linear-gradient(to bottom, #175ba2, #A8CAF3); 
+     width: 35em; 
+     padding: 0.5em; 
+    } 
+
+    div#zwei  { 
+     background: linear-gradient(to right, #175ba2, #A8CAF3); 
+     width: 35em; 
+     padding: 0.5em; 
+    } 
+
+    div#drei  { 
+      background: linear-gradient(to right bottom, #175ba2, #A8CAF3); 
+      width: 35em; 
+      padding: 0.5em; 
+    }    
+  </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+<h1>Lineare Farbverläufe</h1>
+
+<h2>Beispiel Nr. 1</h2>
+<div id="eins">
+<p>Diese Box hat einen einfachen Farbverlauf von oben nach unten.</p> 
+<pre>
+div { 
+  <strong>background: linear-gradient(#175ba2, #A8CAF3);</strong>
+  width: 35em; 
+  padding: 0.5em; 
+} 
+</pre>
+</div>
+
+<h2>Beispiel Nr. 2</h2>
+<div id="zwei">
+<p>Diese Box hat einen einfachen Farbverlauf von links nach rechts.</p> 
+<pre style="color:white;">
+div { 
+  background: linear-gradient(to right, #175ba2, #A8CAF3); 
+  width: 35em; 
+  padding: 0.5em; 
+} 
+</pre>
+</div>
+
+<h2>Beispiel Nr. 3</h2>
+<div id="drei">
+<p>Diese Box hat einen diagonalen Farbverlauf von links oben nach rechts unten.</p> 
+<pre style="color:white;">
+div { 
+  background: linear-gradient(to right bottom, #175ba2, #A8CAF3); 
+  width: 35em; 
+  padding: 0.5em; 
+} 
+
+</pre>
+</div>
+
+
+
+</body>
+</html>

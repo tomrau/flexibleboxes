@@ -1,0 +1,147 @@
+/* ---------------------------------------------------------
+   Inhalte in main, aside und Co
+   -------------------------------------------------------- */
+
+/* -------------
+   Kapitel 06  */ 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* -------------
+   Kapitel 07  */ 
+
+main header h2 {
+  line-height: 1; 
+  padding: 0;
+  margin: 0; 
+}
+.startseite main header h2 { 
+  margin-bottom: 1em;
+}
+
+
+/* -------------
+   Kapitel 10  */ 
+
+main img {
+border-radius: 0.5em;
+
+-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+main h3, aside h3  { 
+  color: #444;
+  line-height: 1; 
+  padding-top: 0.5em;
+  border-top: 1px solid #ddd;
+  margin: 1.5em 0 0.25em 0;
+}
+main p, aside p { 
+  margin-top: 0; 
+  margin-bottom: 1em; 
+}
+main p.artikelinfo, aside p.artikelinfo { 
+  font-size: 13px; 
+  font-size: 0.8125rem;
+  color: #999;
+}
+main a, aside a { 
+  color: #08c; 
+  text-decoration: none; 
+}
+main ul, aside ul  {
+  list-style-type: square;
+  padding: 0;
+  margin: 1em 0 2em 2em;
+}
+
+/* -------------
+   Kapitel 13  */ 
+
+@media screen and (min-width: 768px) {
+  .news div.grid8 { 
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+    /*
+    -webkit-box-sizing: border-box; 
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    */
+  } 
+} /* Ende @media */ 
+
+
+
+/* -------------
+   Kapitel 15.3 - Akkordeon per CSS3 mit :target  */ 
+
+@media screen and (max-width:768px) {
+
+
+  /* Überschriften gestalten */ 
+
+  .news article h3 {
+    background: #08c;
+    color: white; 
+    padding: 0.5em; 
+    border-top: 0; 
+    border-radius: 0.5em; 
+  }
+
+  .news article[id*="a"] h3 a {
+    color: white; 
+    font-weight: normal; 
+    font-size: 1rem;
+    margin-left: 0.5em;
+  }
+
+
+  /* Akkordeon einschalten */ 
+
+  .news article[id*="a"]:not(:target) p.artikelinfo, 
+  .news article[id*="a"]:not(:target) div.artikelinhalt { 
+    display: none; 
+  }
+
+  /* Genericon - \f431 = genericon-expand, Pfeil nach unten */ 
+
+ .news article[id*="a"] h3:before { 
+    content: '\f431'; 
+    font-family: "Genericons"; 
+    font-size: 16px; 
+    vertical-align: middle; 
+    -webkit-font-smoothing: antialiased; 
+  } 
+  
+
+  /* Zustandsanzeige - \f432 = genericon-collapse, Pfeil nach oben */ 
+
+  .news article[id*="a"]:target h3:before {
+    content: '\f432'; 
+    font-family: "Genericons"; 
+    font-size: 16px; 
+    vertical-align: middle; 
+    -webkit-font-smoothing: antialiased; 
+  }  
+
+
+} /* Ende @media */ 
+
+@media screen and (min-width: 768px) {
+  /* normaler Mauszeiger */ 
+  .news h3 a {
+    color: #444; 
+    cursor: default;      
+  }
+
+} /* ende @media */ 
+
+
+/* eof 

@@ -1,0 +1,22 @@
+/* K06 - Bilder nicht größer als das Elternelement */
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.no-boxshadow img {
+    border: 1px solid #ddd;
+    border-right-color: #bbb;
+    border-bottom-color: #bbb;
+}
+
+main header h2 {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.startseite main header h2 {
+    margin-bottom: 1em;
+}
